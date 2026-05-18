@@ -1,9 +1,8 @@
 import time
 
-print("What file would you like to save your results?")
-file_out = input("> ")
+file_out = input("Creating file in current directory.\nEnter filename for results > ")
 
-output = open(file_out, 'a+')
+output = open(file_out, 'r+')
 
 fizz_buzz = "Fizz Buzz"
 fizz = "Fizz"
@@ -11,7 +10,7 @@ buzz = "Buzz"
 
 start_time = time.time()
 
-for x in range(1, 100):
+for x in range(1, 1000+1):
     if x % 3 == 0 and x % 5 == 0:
         #print(fizz_buzz)
         output.write(str(x) + " " + fizz_buzz + "\n")
